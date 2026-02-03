@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+env/
+
+# IDE
+.vscode/
+
+# Data
+data/raw/
+data/processed/
+
+# Media
+*.mp4
+*.avi
+*.jpg
+*.png
+# (PREVENTS OVERCOMMITTING)
