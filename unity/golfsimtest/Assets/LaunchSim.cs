@@ -41,6 +41,9 @@ public class LaunchSim : MonoBehaviour
     public GameObject marker;
 
     private float checkSum = 0;
+
+    public float referencePixelSize;
+    public float referenceDistance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -144,7 +147,7 @@ public class LaunchSim : MonoBehaviour
         float z;
         float imgTime = (1 / data.frameRate) * data.frameCount;
         //remember to replace parameters with a known value once we get the cameras
-        float focalLength = (calc.getFocalLength(0, 0, 0.046f));
+        float focalLength = (calc.getFocalLength(referencePixelSize, referenceDistance, 0.046f));
         
         x = ((Math.Abs(data.pos2[0]-data.pos1[0]))/data.size1)*0.046f;
         y = ((data.pos2[1]-data.pos1[1])/data.size1)*0.046f;
