@@ -25,10 +25,10 @@ public class UIStats : MonoBehaviour
     void Update()
     {
         distanceText.SetText(
-            Mathf.Round((calc.getRange(calc.getSideSpeed(stats.speed, stats.verticalAngle), calc.getInitVSpeed(stats.speed, stats.verticalAngle)))*10)/10.0
+            Mathf.Round(stats.range*10)/10.0
             +"m");
         heightText.SetText(
-            Mathf.Round((calc.getMaxHeight(calc.getInitVSpeed(stats.speed, stats.verticalAngle)))*10)/10.0
+            Mathf.Round(stats.height*10)/10.0
                         +"m");
         speedText.SetText(stats.speed+"m/s");
         vAngleText.SetText(stats.verticalAngle+"°");
