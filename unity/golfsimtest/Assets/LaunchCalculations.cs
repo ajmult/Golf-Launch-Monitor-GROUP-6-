@@ -35,12 +35,17 @@ public class LaunchCalculations : MonoBehaviour
         return (0.5f*1.293f*(Mathf.Pow(velocity, 2)*0.001662f*0.47f))/0.046f;
     }
     
+    public float getFrictionAccel(float frictionCoefficient)
+    {
+        return (frictionCoefficient * 9.81f);
+    }
+    
     public float getFocalLength(float pixelSize, float knownDistance, float ballSize)
     {
         return (pixelSize * knownDistance) / ballSize;
     }
     
-    public float getDistanceDromPixelSize(float pixelSize, float focalLength, float ballSize)
+    public float getDistanceFromPixelSize(float pixelSize, float focalLength, float ballSize)
     {
         return (ballSize * focalLength) / pixelSize;
     }

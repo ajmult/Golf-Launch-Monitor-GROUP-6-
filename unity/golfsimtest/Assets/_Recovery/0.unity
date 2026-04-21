@@ -1125,7 +1125,7 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
@@ -2555,7 +2555,6 @@ MonoBehaviour:
   marker: {fileID: 843485775474986083, guid: 376412850fc68ab4c8ffe7a758996ef9, type: 3}
   referencePixelSize: 0
   referenceDistance: 0
-  twoCamera: 0
   testMode: 1
 --- !u!114 &833691300
 MonoBehaviour:
