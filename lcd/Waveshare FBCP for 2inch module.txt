@@ -1,0 +1,3 @@
+git clone https://github.com/waveshareteam/waveshare_fbcp
+cd waveshare_fbcp
+sudo ./shell/waveshare-2inch
