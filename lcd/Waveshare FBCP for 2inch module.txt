@@ -1,0 +1,10 @@
+# Run the following in order to get FBCP running on Stereo Pi # 
+sudo apt-get update
+sudo apt-get install cmake -y
+
+git clone https://github.com/juj/fbcp-ili9341.git
+cd fbcp-ili9341
+mkdir build
+cd build
+cmake -DST7789V=ON -DWAVESHARE_2INCH_LCD=ON -DILI9341_SPI_24MHZ=ON ..
+make -j
